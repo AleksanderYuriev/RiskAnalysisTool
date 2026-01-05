@@ -3,6 +3,7 @@
 #include <time.h>
 #include <string.h>
 #include <math.h>
+// #include <windows.h>
 
 // Максимум стоки и дни(минали, симулирани, бъдещи)
 #define MAX_STOCKS 5
@@ -39,6 +40,7 @@ void print_results(Stock stocks[], Investment investments[], int inv_count, doub
 void print_future_prediction(Stock stocks[], int count);
 
 int main() {
+    // SetConsoleOutputCP(CP_UTF8);
     int num_stocks;
     double cash = 1000.0;  // Начална сума
     Investment investments[50];  // Място за всички инвестиции
